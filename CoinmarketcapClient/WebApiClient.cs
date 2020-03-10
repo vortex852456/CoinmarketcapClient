@@ -41,19 +41,20 @@ namespace NoobsMuc.Coinmarketcap.Client
             {
                 Currency item = new Currency
                 {
-                    Id = data.id.ToString(),
+                    Id = data.id,
+                    Slug = data.slug,
                     Name = data.name,
                     Symbol = data.symbol,
-                    Rank = data.cmc_rank.ToString(),
+                    Rank = data.cmc_rank,
                     Price = data.quote.CurrenyPriceInfo.price ?? 0d,
                     Volume24hUsd = data.quote.CurrenyPriceInfo.volume_24h ?? 0,
                     MarketCapUsd = data.quote.CurrenyPriceInfo.volume_24h ?? 0,
                     PercentChange1h = data.quote.CurrenyPriceInfo.percent_change_1h ?? 0,
                     PercentChange24h = data.quote.CurrenyPriceInfo.percent_change_24h ?? 0,
                     PercentChange7d = data.quote.CurrenyPriceInfo.percent_change_7d ?? 0,
-                    LastUpdated = data.quote.CurrenyPriceInfo.last_updated,
+                    LastUpdated = data.quote.CurrenyPriceInfo.last_updated.ToLocalTime(),
                     MarketCapConvert = data.quote.CurrenyPriceInfo.market_cap ?? 0d,
-                    ConvertCurrency = convert
+                    ConvertCurrency = convert,
                 };
 
                 currencyList.Add(item);

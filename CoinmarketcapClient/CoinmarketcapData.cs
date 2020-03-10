@@ -42,7 +42,7 @@ namespace NoobsMuc.Coinmarketcap.Client
         public double? max_supply { get; set; }
         public double? circulating_supply { get; set; }
         public double? total_supply { get; set; }
-        public CurrenyInfo platform { get; set; }
+        public CurrencyInfo platform { get; set; } 
         public int cmc_rank { get; set; }
         public DateTime last_updated { get; set; }
         public Quote quote { get; set; }
@@ -58,7 +58,7 @@ namespace NoobsMuc.Coinmarketcap.Client
         public object notice { get; set; }
     }
 
-    public class CurrenyInfo
+    public class CurrencyInfo
     {
         public int id { get; set; }
         public string name { get; set; }
