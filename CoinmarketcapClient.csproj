@@ -16,6 +16,7 @@
     <AssemblyName>NoobsMuc.Coinmarketcap.Client</AssemblyName>
     <RootNamespace>NoobsMuc.Coinmarketcap.Client</RootNamespace>
     <PackageReleaseNotes>support new pro-api coinmarketcap with key</PackageReleaseNotes>
+    <PackageIcon>noobs.png</PackageIcon>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </PropertyGroup>
 
@@ -34,6 +35,13 @@
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities">
       <Version>2.2.0</Version>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="noobs.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

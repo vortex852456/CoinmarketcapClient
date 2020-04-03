@@ -46,14 +46,14 @@ namespace NoobsMuc.Coinmarketcap.Client
                     Name = data.name,
                     Symbol = data.symbol,
                     Rank = data.cmc_rank,
-                    Price = data.quote.CurrenyPriceInfo.price ?? 0d,
+                    Price = data.quote.CurrenyPriceInfo.price ?? 0,
                     Volume24hUsd = data.quote.CurrenyPriceInfo.volume_24h ?? 0,
                     MarketCapUsd = data.quote.CurrenyPriceInfo.volume_24h ?? 0,
                     PercentChange1h = data.quote.CurrenyPriceInfo.percent_change_1h ?? 0,
                     PercentChange24h = data.quote.CurrenyPriceInfo.percent_change_24h ?? 0,
                     PercentChange7d = data.quote.CurrenyPriceInfo.percent_change_7d ?? 0,
                     LastUpdated = data.quote.CurrenyPriceInfo.last_updated.ToLocalTime(),
-                    MarketCapConvert = data.quote.CurrenyPriceInfo.market_cap ?? 0d,
+                    MarketCapConvert = data.quote.CurrenyPriceInfo.market_cap ?? 0,
                     ConvertCurrency = convert,
                 };
 
